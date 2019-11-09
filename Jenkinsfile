@@ -5,6 +5,6 @@ node{
         git 'https://github.com/skani-git/projCert.git'
     }
     stage('Build'){
-        docker build . -t devops-webapp
+        'sh docker build . -t devops-webapp'
     }
 }
